@@ -1,32 +1,32 @@
-import React from 'react';
-// import {
-//     AdMobInterstitial,
-// } from 'expo-ads-admob';
-// import CONSTANTS from '../../../contants';
-
-// // Set global test device ID
+import { InterstitialAd, TestIds } from '@react-native-firebase/admob';
+import React, { useEffect } from 'react';
+import CONSTANTS from '../../../contants';
 
 const Interstitial = () => {
+    const adUnitId = __DEV__ ? TestIds.INTERSTITIAL : CONSTANTS.ads.intersticial.id;
+    const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+        requestNonPersonalizedAdsOnly: true
+    });
 
-//     useEffect(() => {
-//         (async function setTest() {
-//             await AdMobInterstitial.setAdUnitID(CONSTANTS.ads.intersticial.id)
-//         })();
-//         loadAd()
-//     })
+    useEffect(() => {
+        try {
+            interstitial.load();
+            interstitial.onAdEvent
+            console.log("Intersticial loaded");
 
-//     async function loadAd() {
-//         try {
-//             await AdMobInterstitial.requestAdAsync({servePersonalizedAds: true})
-//             await AdMobInterstitial.showAdAsync();
-            
-//         } catch (error) {
-//             console.log("Falha load ads");
-            
-//         }
-//     }
+        } catch (error) {
+            console.log("Error loaded Intersticial\n", error.message);
+        }
+    }, []);
 
-    return (<></>)
+    interstitial.onAdEvent((type)=>{
+        if(type !== "loaded") return;
+        interstitial.show()        
+    })
+
+
+    return (<></>);
 }
+
 
 export default Interstitial

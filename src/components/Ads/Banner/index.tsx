@@ -1,32 +1,36 @@
 import { BannerAd, BannerAdSize, TestIds } from '@react-native-firebase/admob';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View } from 'react-native';
-// import CONSTANTS from '../../../contants';
+import CONSTANTS from '../../../contants';
 import styles from './styles';
 
-// Set global test device ID
-
 const Banner = () => {
+
+    const unitId = __DEV__ ? TestIds.BANNER : CONSTANTS.ads.banner.id
+    useEffect(()=>{
+        console.log("isDev from BANNER: ", __DEV__);
+        
+    })
 
     return (
         <View style={styles.container} >
             <BannerAd
-                unitId={TestIds.BANNER}
-                size={BannerAdSize.ADAPTIVE_BANNER}
+                unitId={unitId}
+                size={BannerAdSize.SMART_BANNER}
                 requestOptions={{
                     requestNonPersonalizedAdsOnly:true
                 }}
                 onAdFailedToLoad={(error)=>{
-                    console.log(`Error loaded ads banner\n${error.message}`)
+                    console.log(`Error load ads banner\n${error.message}`)
                 }}
                 onAdClosed={()=>{}}
                 onAdLeftApplication={()=>{}}
                 onAdLoaded={()=>{
-                    console.log("ads loaded");
+                    console.log("ads banner loaded");
                     
                 }}
                 onAdOpened={()=>{
-                    console.log("ads opened");
+                    console.log("ads banner opened");
 
                 }}
             />

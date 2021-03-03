@@ -6,6 +6,7 @@ import { RectButton, ScrollView } from 'react-native-gesture-handler';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Interstitial from '../../components/Ads/Interstitial';
 import Layout from '../../Layout';
 import phrasesFile from '../../resources/phrases';
 import randomNumber from '../../utils/randomNumber';
@@ -106,7 +107,7 @@ const Message = () => {
                     </View>
                 </View>
             </View>
-            {/* <Interstitial/> */}
+            <Interstitial/>
         </Layout>
     )
 }
