@@ -3,6 +3,7 @@ import React from 'react';
 import { Image, Text, View } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import imgRandom from '../../assets/images/img2.jpg';
+import Banner from '../../components/Ads/Banner';
 import Layout from '../../Layout';
 import styles from './styles';
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
                 <Image style={styles.image} source={imgRandom} />
             </View>
             <View style={styles.footer} >
-                {/* <Banner/> */}
+                <Banner/>
                 <RectButton
                     style={styles.button}
                     onPress={handlerNavigateToMessage}

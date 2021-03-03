@@ -1,6 +1,6 @@
+import { BannerAd, BannerAdSize, TestIds } from '@react-native-firebase/admob';
 import React from 'react';
-// import { BannerAd, BannerAdSize, TestIds } from '@react-native-firebase/admob';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 // import CONSTANTS from '../../../contants';
 import styles from './styles';
 
@@ -10,9 +10,9 @@ const Banner = () => {
 
     return (
         <View style={styles.container} >
-            {/* <BannerAd
+            <BannerAd
                 unitId={TestIds.BANNER}
-                size={BannerAdSize.SMART_BANNER}
+                size={BannerAdSize.ADAPTIVE_BANNER}
                 requestOptions={{
                     requestNonPersonalizedAdsOnly:true
                 }}
@@ -21,9 +21,15 @@ const Banner = () => {
                 }}
                 onAdClosed={()=>{}}
                 onAdLeftApplication={()=>{}}
-                onAdLoaded={()=>{}}
-                onAdOpened={()=>{}}
-            /> */}
+                onAdLoaded={()=>{
+                    console.log("ads loaded");
+                    
+                }}
+                onAdOpened={()=>{
+                    console.log("ads opened");
+
+                }}
+            />
         </View>
     )
 }
