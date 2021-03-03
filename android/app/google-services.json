@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "810833764845",
+    "project_id": "pagerzap",
+    "storage_bucket": "pagerzap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810833764845:android:c81d409357555f841247e4",
+        "android_client_info": {
+          "package_name": "com.pager_zap2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810833764845-lfdre9f11sij5bl3e3uhne8bhgha6fhc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnXOKXJRp_LK8GHLpzib_D_gJrAp-cY7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810833764845-lfdre9f11sij5bl3e3uhne8bhgha6fhc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-2722848055820189~9992153865"
+    }
+  ],
+  "configuration_version": "1"
+}
