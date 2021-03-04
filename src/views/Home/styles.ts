@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-
 const styles = StyleSheet.create({
     header: {
         padding: 10,
@@ -8,7 +7,8 @@ const styles = StyleSheet.create({
     },
     textHeader:{
         fontSize: 16,
-        fontFamily: 'Poppins_400Regular',
+        fontFamily: 'Poppins-Regular',
+        color: "#000"
     },
     body: {
         flex: 1
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     },
     textButton: {
         fontSize: 20,
-        fontFamily: 'Poppins_600SemiBold',
+        fontFamily: 'Poppins-SemiBold',
         color: "#4682B4"
     },
     footer: {

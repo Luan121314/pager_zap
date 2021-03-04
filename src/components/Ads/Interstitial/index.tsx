@@ -12,10 +12,10 @@ const Interstitial = () => {
         try {
             interstitial.load();
             interstitial.onAdEvent
-            console.log("Intersticial loaded");
+            // console.log("Intersticial loaded");
 
         } catch (error) {
-            console.log("Error loaded Intersticial\n", error.message);
+            // console.log("Error loaded Intersticial\n", error.message);
         }
     }, []);
 

@@ -21,16 +21,16 @@ const Banner = () => {
                     requestNonPersonalizedAdsOnly:true
                 }}
                 onAdFailedToLoad={(error)=>{
-                    console.log(`Error load ads banner\n${error.message}`)
+                    // console.log(`Error load ads banner\n${error.message}`)
                 }}
                 onAdClosed={()=>{}}
                 onAdLeftApplication={()=>{}}
                 onAdLoaded={()=>{
-                    console.log("ads banner loaded");
+                    // console.log("ads banner loaded");
                     
                 }}
                 onAdOpened={()=>{
-                    console.log("ads banner opened");
+                    // console.log("ads banner opened");
 
                 }}
             />

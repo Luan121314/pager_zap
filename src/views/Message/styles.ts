@@ -6,8 +6,9 @@ const styles = StyleSheet.create({
         // marginTop: 60
     },
     textHeader: {
-        fontFamily: 'Poppins_700Bold',
-        fontSize: 20
+        fontFamily: 'Poppins-Bold',
+        fontSize: 20,
+        color: "#000"
     },
     body: {
         borderWidth: 0.2,
@@ -20,10 +21,11 @@ const styles = StyleSheet.create({
         padding: 20
     },
     textContent: {
-        fontFamily:"Poppins_400Regular"
+        fontFamily:"Poppins-Regular",
+        color: "#000"
     },
     textAuthor: {
-        fontFamily: "Poppins_600SemiBold",
+        fontFamily: "Poppins-SemiBold",
         marginTop: 10
     },
     footer: {
@@ -34,7 +36,8 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start'
     },
     textShared: {
-        fontFamily: "Poppins_400Regular"
+        fontFamily: "Poppins-Regular",
+        color: "#000"
     },
     buttonGroup: {
         flexDirection: 'row',
