@@ -68,7 +68,7 @@ const Message = () => {
                         <Text style={styles.textContent} >
                             {message.phrase}
                         </Text>
-                        <Text style={styles.textAuthor} >Autor: {message.author}</Text>
+                        <Text style={styles.textAuthor} >{message.author}</Text>
 
                     </View>
                 </ScrollView>
