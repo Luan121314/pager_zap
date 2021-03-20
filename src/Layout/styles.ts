@@ -1,4 +1,5 @@
 import { Dimensions, StyleSheet } from 'react-native';
+import CONSTANTS from '../contants';
 
 const styles= StyleSheet.create({
     container:{
@@ -8,7 +9,7 @@ const styles= StyleSheet.create({
         paddingVertical:20,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: "#F5F5DC"
+        backgroundColor: CONSTANTS.styles.primary.default
     }
 })
 

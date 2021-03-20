@@ -1,43 +1,56 @@
 import { } from 'react';
 import { StyleSheet } from 'react-native';
+import CONSTANTS from '../../contants';
 
 const styles = StyleSheet.create({
     header: {
-        // marginTop: 60
+        paddingHorizontal: 10,
+        height: 100,
+        justifyContent: 'center',
+        width: "100%",
+        overflow: 'hidden'
+       
+    },
+    nav:{
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        marginBottom: 5
     },
     textHeader: {
+        textAlign: 'center',
         fontFamily: 'Poppins-Bold',
         fontSize: 20,
-        color: "#000"
+        color: CONSTANTS.styles.primary.text
     },
     body: {
-        borderWidth: 0.2,
-        height: 350,
-        marginTop: 40,
-        elevation: 5
+        // maxHeight: 300,
+        flex: 1,
+        paddingTop: 40
     },
     content: {
-        flex: 1,
-        padding: 20
+        // flex: 1,
+        paddingHorizontal:15
     },
     textContent: {
-        fontFamily:"Poppins-Regular",
-        color: "#000"
+        fontFamily: "Poppins-Regular",
+        color: CONSTANTS.styles.primary.text
     },
     textAuthor: {
         fontFamily: "Poppins-SemiBold",
         marginTop: 10
     },
     footer: {
-        justifyContent: 'flex-end',
-        padding: 10
+        padding: 10,
+        height: 100,
+        borderTopWidth: 1,
+        width: '100%'
     },
     sharedContent: {
-        alignItems: 'flex-start'
+        alignItems: 'center'
     },
     textShared: {
         fontFamily: "Poppins-Regular",
-        color: "#000"
+        color: CONSTANTS.styles.primary.text
     },
     buttonGroup: {
         flexDirection: 'row',
@@ -49,19 +62,15 @@ const styles = StyleSheet.create({
         height: 45,
         borderRadius: 10,
         padding: 10,
-        backgroundColor: "#E0EEEE",
+        backgroundColor: CONSTANTS.styles.primary.button,
         marginHorizontal: 10
     },
-    buttonBack: {
-        position: 'absolute',
-        top: 50,
-        left: 30,
+    button: {
         height: 45,
         width: 45,
         borderRadius: 10,
-        borderColor:"#f08080",
         elevation: 2,
-        backgroundColor: "#ffefd5",
+        backgroundColor: CONSTANTS.styles.primary.button,
         justifyContent: 'center',
         alignItems: 'center'
     }

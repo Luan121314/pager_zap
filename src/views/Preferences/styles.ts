@@ -1,5 +1,6 @@
-import { StyleSheet } from 'react-native';
-import CONSTANTS from '../../contants';
+import { StyleSheet } from "react-native";
+import CONSTANTS from "../../contants";
+
 const styles = StyleSheet.create({
     header: {
         paddingHorizontal: 10,
@@ -14,37 +15,49 @@ const styles = StyleSheet.create({
         marginBottom: 5
     },
     textHeader: {
-        fontSize: 16,
-        fontFamily: 'Poppins-Regular',
-        color: CONSTANTS.styles.primary.text
-    },
-    textGreetings: {
         fontSize: 20,
         fontFamily: 'Poppins-SemiBold',
-        color: CONSTANTS.styles.primary.text,
-        marginBottom: 10
+        color: CONSTANTS.styles.primary.text
     },
     body: {
         flex: 1,
         marginVertical: 10,
-        justifyContent: 'center'
+        alignItems: "center",
+        overflow: "hidden"
     },
-    image: {
-        // flex: 1,
-        resizeMode: "contain",
-        // opacity:0.4,
-        height: 245,
-        width: 245
+    content: {
+        // alignItems: "center",
+    },
+    textContent:{
+        textAlign: "left",
+        paddingLeft: 10,
+        marginBottom: 5
+    },
+    optionsGroup: {
+        width: 320,
+        borderColor: "#000",
+        borderWidth: 1,
+        alignItems: "center",
+        overflow: "hidden",
+        padding: 10,
+        marginBottom: 15
     },
     button: {
+        backgroundColor: CONSTANTS.styles.primary.button,
+        borderRadius: 8,
+        zIndex: 1,
+        height: 45,
+        width: 45,
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    buttonSave: {
         backgroundColor: CONSTANTS.styles.primary.button,
         borderWidth: 1,
         borderRadius: 5,
         padding: 15,
         elevation: 3
-        // position: 'absolute',
-        // bottom: 30
-    },
+        },
     textButton: {
         fontSize: 20,
         fontFamily: 'Poppins-SemiBold',
@@ -54,7 +67,8 @@ const styles = StyleSheet.create({
         height: 100,
         justifyContent: 'flex-end',
         alignItems: 'center',
+        width: "100%"
     }
-})
+});
 
 export default styles;

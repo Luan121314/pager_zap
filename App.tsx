@@ -1,10 +1,16 @@
 
 import React from 'react';
+import { Provider } from 'react-native-paper';
+import { PreferencesProvider } from './src/contexts/Preferences';
 import Routes from './src/Routes';
 
 const App = () => {
   return (
-  <Routes/>   
+    <Provider >
+      <PreferencesProvider>
+        <Routes />
+      </PreferencesProvider>
+    </Provider>
   );
 };
 
